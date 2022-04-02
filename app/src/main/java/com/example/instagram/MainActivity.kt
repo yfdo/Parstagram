@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.instagram.fragments.ComposeFragment
 import com.example.instagram.fragments.FeedFragment
+import com.example.instagram.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import java.io.File
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                     fragmentToShow = ComposeFragment()
                 }
                 R.id.action_profile -> {
-                    Toast.makeText(this, "profile screen", Toast.LENGTH_SHORT).show()
+                    fragmentToShow = ProfileFragment()
                 }
             }
 
